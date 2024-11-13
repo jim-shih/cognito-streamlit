@@ -1,5 +1,3 @@
-Certainly! I'll modify the README to include information about using Poetry for package management and the boto3 session manager. Here's the updated version:
-
 # Streamlit AWS Cognito Authentication
 
 This project demonstrates how to implement AWS Cognito user authentication in a Streamlit application. It provides a secure way to manage user access to your Streamlit app using AWS Cognito's robust identity management services, with Poetry for dependency management and boto3 session manager for AWS interactions.
