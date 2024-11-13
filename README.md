@@ -122,7 +122,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - AWS for providing Cognito services
 - Poetry for simplified dependency management
 - All contributors and maintainers of the used libraries
-
----
-
-This updated README now includes information about using Poetry for package management and mentions the use of boto3 session manager. It also provides an example of how the boto3 session is initialized in the code. Remember to adjust any specific details to match your exact project structure or requirements.
