@@ -22,7 +22,7 @@ REGION_NAME = os.getenv("USER_POOL_REGION_NAME")
 # )
 # client = session.client("cognito-idp", region_name=REGION_NAME)
 
-client = boto3.client("cognito-idp")
+client = boto3.client("cognito-idp", region_name=REGION_NAME)
 
 def initiate_auth(username, password):
     try:
