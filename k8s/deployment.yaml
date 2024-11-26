@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations: {}
+  name: cognito-streamlit-deployment
+  namespace: cognito-streamlit-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cognito-streamlit
+  template:
+    metadata:
+      labels:
+        app: cognito-streamlit
+    spec:
+      containers:
+        - name: cognito-streamlit
+          env:
+            - name: USER_POOL_ID
+              value: "ap-northeast-1_4YSeHCWSs"
+            - name: USER_POOL_CLIENT_ID
+              value: "373th3njpi9q95su8r4k0m98gs"
+            - name: USER_POOL_REGION_NAME
+              value: "ap-northeast-1"
+          image: jim732883/cognito-streamlit:latest
+          ports:
+            - containerPort: 8501
+          resources: {}
