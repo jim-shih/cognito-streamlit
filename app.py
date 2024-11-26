@@ -156,11 +156,6 @@ def user_signup_page():
         if st.button("Resend Verification Code"):
             _resent_verification_code(st.session_state["username"])
 
-    if not st.session_state.get("user_created"):
-        if _check_user_exists(username) and (
-                not st.session_state["email_verified"]):
-            _delete_user(username)
-
 
 def main():
     st.title("Cognito Authentication")
